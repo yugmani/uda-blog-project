@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Blog Website</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive-media-query.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -25,22 +26,25 @@
           <h3 class="current-date">05.25.2021</h3>
         </div>
       </div>
-      <div class="sidebar">
+      <div class="sidebar d-flex-col">
         <div class="logo d-flex">
           <picture>
             <img src="images/myLogo.PNG" alt="" />
           </picture>
         </div>
-        <div class="side d-flex">
-          <i class="fas fa-home"></i>
+        <div id="directory" class="d-flex-col">
+          <div class="side d-flex">
+            <i class="fas fa-home"></i>
+          </div>
+          <div class="side d-flex">
+            <i class="fas fa-file-code"></i>
+          </div>
+          <div class="side d-flex">
+            <i class="fab fa-blogger"></i>
+          </div>
         </div>
-        <div class="side d-flex">
-          <i class="fas fa-file-code"></i>
-        </div>
-        <div class="side d-flex">
-          <i class="fab fa-blogger"></i>
-        </div>
-        <div class="social-media d-flex">
+        <hr class="hr-rule" />
+        <div id="social-media" class="d-flex-col">
           <div class="icon d-flex">
             <i class="fas fa-mail-bulk"></i>
           </div>
@@ -53,6 +57,12 @@
           <div class="icon d-flex">
             <i class="fab fa-twitter-square"></i>
           </div>
+        </div>
+        <hr class="hr-rule" />
+        <div id="contact" class="d-flex-col">
+          <h3>Contact:</h3>
+          <p><i class="fas fa-envelope"></i> someone@anyone.com</p>
+          <p><i class="fas fa-phone-square-alt"></i> 1 (222) 222 - 2222</p>
         </div>
       </div>
 
@@ -120,6 +130,7 @@
               doloremque fugiat reiciendis quo voluptatem ea sapiente
               consequuntur quia praesentium maiores eligendi.
             </p>
+            <p>Thank you for reading!</p>
           </div>
         </div>
         <div class="blog-list">
