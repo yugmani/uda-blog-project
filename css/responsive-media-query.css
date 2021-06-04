@@ -4,37 +4,36 @@
 
 @media only screen and (max-width: 600px) {
   /*Big smartphones [426px -> 600px]*/
+
   .container {
-    grid-gap: 2px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto auto auto 50px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto 50px;
     grid-template-areas:
-      "h h h h h"
-      "s s s s s"
-      "bc bc bc bc bc"
-      "f f f f f";
+      "s s s h h h h h h h h h"
+      "s s s bc bc bc bc bc bc bc bc bc"
+      "f f f f f f f f f f f f";
   }
 
-  .title h1 {
-    font-size: 48px;
-  }
-
-  .header {
+  .blog-content,
+  .blog-post-content {
     flex-direction: column;
-    justify-content: center;
-  }
-
-  .blog-content {
-    grid-gap: 2px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "cb cb"
-      "bl bl";
+    justify-content: space-between;
   }
 
   .utility {
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .blog-description {
+    min-width: 100%;
+  }
+
+  .sidebar {
+    height: auto;
+  }
+
+  #contact > p {
+    font-size: 12px;
   }
 }

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Blog Website</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/responsive-media-query.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -16,8 +15,9 @@
     <style></style>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
+    <main class="container">
+      <!-- Header Section -->
+      <header>
         <div class="title">
           <h1>Coding Guru</h1>
         </div>
@@ -25,11 +25,12 @@
           <h3 class="issue">Blog No.: 07</h3>
           <h3 class="current-date">05.25.2021</h3>
         </div>
-      </div>
-      <div class="sidebar d-flex-col">
+      </header>
+      <!-- Sidebar Section -->
+      <section class="sidebar d-flex-col">
         <div class="logo d-flex">
           <picture>
-            <img src="images/myLogo.PNG" alt="" />
+            <img src="images/myLogo.PNG" alt="logo-image" />
           </picture>
         </div>
         <div id="directory" class="d-flex-col">
@@ -46,9 +47,6 @@
         <hr class="hr-rule" />
         <div id="social-media" class="d-flex-col">
           <div class="icon d-flex">
-            <i class="fas fa-mail-bulk"></i>
-          </div>
-          <div class="icon d-flex">
             <i class="fab fa-facebook-square"></i>
           </div>
           <div class="icon d-flex">
@@ -61,92 +59,29 @@
         <hr class="hr-rule" />
         <div id="contact" class="d-flex-col">
           <h3>Contact:</h3>
-          <p><i class="fas fa-envelope"></i> someone@anyone.com</p>
-          <p><i class="fas fa-phone-square-alt"></i> 1 (222) 222 - 2222</p>
+          <p><i class="fas fa-envelope"></i> some@one.com</p>
+          <p><i class="fas fa-phone-square-alt"></i>1(222)222-2222</p>
         </div>
-      </div>
-
-      <div class="blog-content">
-        <div class="current-blog">
-          <div class="current-blog-title">
-            <h1>Learn HTML5 free in Udacity!</h1>
-          </div>
-          <div class="utility">
-            <div class="key-word">#html, #CSS, #webdesign.</div>
-
-            <div class="share-kit">
-              <p><i class="fas fa-share"></i>Share</p>
-              <p><i class="fas fa-envelope"></i></p>
-              <p><i class="fab fa-facebook-square"></i></p>
-              <p><i class="fab fa-instagram-square"></i></p>
-              <p><i class="fab fa-twitter-square"></i></p>
-            </div>
-          </div>
-          <picture>
-            <img src="images/22-512.png" alt="" />
-          </picture>
-          <div class="current-content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nisi
-              delectus voluptatibus voluptates, numquam aspernatur? Pariatur
-              sunt ad eius, doloremque dicta qui temporibus suscipit delectus
-              cumque sint mollitia maiores. Nostrum aspernatur perspiciatis
-              debitis praesentium officiis incidunt earum quam a ducimus!
-              Eveniet, architecto excepturi! Fugit aspernatur quos, illum
-              blanditiis, corrupti nihil enim possimus modi dolores illo,
-              consequatur impedit officia hic omnis eaque qui dicta ipsa? Omnis
-              id voluptatibus alias pariatur dolores commodi architecto
-              voluptates voluptatum, minima culpa cupiditate eum esse ut aut
-              animi laborum blanditiis, totam deleniti.
-            </p>
-            <p>
-              Maiores doloribus odit voluptatum sint incidunt nemo mollitia nisi
-              harum laboriosam, saepe earum adipisci suscipit magnam error neque
-              rerum dolorum doloremque rem aliquid temporibus, laborum magni ad,
-              pariatur obcaecati. Corrupti ipsum saepe ea aut voluptate
-              quibusdam, fugit facere accusamus nesciunt officiis sit, tempora
-              quod exercitationem explicabo iste nihil expedita in vero
-              dignissimos repellendus! Optio rerum laboriosam, temporibus illo
-              perspiciatis, atque suscipit facilis consectetur aliquid dolore
-              eveniet at nisi nihil laborum perferendis obcaecati iste iure ea
-              exercitationem consequuntur ipsam praesentium. Blanditiis
-              provident ullam quas dignissimos quasi architecto optio numquam
-              minus? Laborum ea nisi nihil modi! Aliquam fuga dignissimos
-              ducimus aut officia aperiam.
-            </p>
-            <p>
-              Iste odio nemo voluptas explicabo. Harum fuga voluptas sit
-              blanditiis dignissimos sunt tempore! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Libero commodi quia, quae quibusdam
-              praesentium earum doloremque recusandae perferendis cum explicabo
-              nesciunt quo, reprehenderit minus nobis adipisci iusto dolores
-              facilis? Perferendis inventore impedit ab consequatur incidunt
-              expedita animi ipsum nihil nemo perspiciatis repellat qui veniam
-              molestias, adipisci facere maiores! Quidem blanditiis impedit
-              quaerat culpa similique soluta consectetur, quia dicta, suscipit
-              placeat incidunt? Vitae hic omnis error quidem quo ut culpa
-              facilis sunt sit, totam et eos. Quas inventore rerum illum? Ullam
-              suscipit iste, repudiandae esse numquam earum quis soluta
-              doloremque fugiat reiciendis quo voluptatem ea sapiente
-              consequuntur quia praesentium maiores eligendi.
-            </p>
-            <p>Thank you for reading!</p>
-          </div>
-        </div>
+      </section>
+      <!-- Blog Section -->
+      <section class="blog-content">
         <div class="blog-list">
-          <h2>All My Blogs...</h2>
-          <ol>
-            <li>
+          <div class="blog-list-title">
+            <h2>All My Blogs...</h2>
+          </div>
+          <div class="cards">
+            <div class="card">
               <div class="blog-image">
-                <img src="images/22-512.png" alt="" />
+                <img src="images/22-512.png" alt="html-image" />
               </div>
               <div class="blog-description">
                 <div class="blog-title">Learn HTML5 free in Udacity!</div>
                 <div class="blog-date">05/25/2021</div>
-                <p><a href="#"> more...</a></p>
+                <button class="btn"><a href="#">Read more</a></button>
               </div>
-            </li>
-            <li>
+            </div>
+
+            <div class="card">
               <div class="blog-image">
                 <img src="images/Js.png" alt="" />
               </div>
@@ -156,24 +91,26 @@
                   Languages?
                 </div>
                 <div class="blog-date">05/24/2021</div>
-                <p>
-                  <a href="blogs/blog-post6.html" target="_blank"> more...</a>
-                </p>
+                <button class="btn" p>
+                  <a href="blogs/blog-post6.html" target="_blank">Read more</a>
+                </button>
               </div>
-            </li>
-            <li>
+            </div>
+
+            <div class="card">
               <div class="blog-image">
                 <img src="images/react-js.png" alt="" />
               </div>
               <div class="blog-description">
                 <div class="blog-title">Is React a Library or Framework?</div>
                 <div class="blog-date">05/23/2021</div>
-                <p>
-                  <a href="https://reactjs.org/" target="_blank"> more...</a>
-                </p>
+                <button class="btn">
+                  <a href="https://reactjs.org/" target="_blank">Read more</a>
+                </button>
               </div>
-            </li>
-            <li>
+            </div>
+
+            <div class="card">
               <div class="blog-image">
                 <img src="images/rocks.png" alt="" />
               </div>
@@ -182,10 +119,11 @@
                   Let's Develop Rock, Paper & Scissors game and play!
                 </div>
                 <div class="blog-date">05/22/2021</div>
-                <p><a href="#"> more...</a></p>
+                <button class="btn"><a href="#">Read more</a></button>
               </div>
-            </li>
-            <li>
+            </div>
+
+            <div class="card">
               <div class="blog-image">
                 <img src="images/freecodecamp.jpeg" alt="" />
               </div>
@@ -194,26 +132,28 @@
                   What can you learn in freecodecamp.org?
                 </div>
                 <div class="blog-date">05/21/2021</div>
-                <p>
-                  <a href="https://www.freecodecamp.org" target="_blank">
-                    more...</a
+                <button class="btn">
+                  <a href="https://www.freecodecamp.org" target="_blank"
+                    >Read more</a
                   >
-                </p>
+                </button>
               </div>
-            </li>
-            <li>
+            </div>
+
+            <div class="card">
               <div class="blog-image">
                 <img src="images/github-512.png" alt="" />
               </div>
               <div class="blog-description">
                 <div class="blog-title">Why do you need to use github?</div>
                 <div class="blog-date">05/20/2021</div>
-                <p>
-                  <a href="https://github.com/" target="_blank"> more...</a>
-                </p>
+                <button class="btn">
+                  <a href="https://github.com/" target="_blank">Read more</a>
+                </button>
               </div>
-            </li>
-            <li>
+            </div>
+
+            <div class="card">
               <div class="blog-image">
                 <img src="images/css3.png" alt="" />
               </div>
@@ -222,19 +162,42 @@
                   Beautify your website with these CSS tricks!rea
                 </div>
                 <div class="blog-date">05/19/2021</div>
-                <p>
-                  <a href="https://www.geeksforgeeks.org/" target="_blank">
-                    more...</a
+                <button class="btn">
+                  <a href="https://www.geeksforgeeks.org/" target="_blank"
+                    >Read more</a
                   >
-                </p>
+                </button>
               </div>
-            </li>
-          </ol>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="footer d-flex">
+        <!-- Author's info Section -->
+        <aside class="author">
+          <figure>
+            <img
+              src="https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_960_720.png"
+              alt="avatar"
+            />
+            <figcaption>Yoog Gurung</figcaption>
+          </figure>
+          <div class="author-info">
+            <h2>Web Designer</h2>
+            <p>
+              As a professional freelancer I help people, organizations and
+              companies solving their web issues. I am proficient in HTML, CSS
+              and JavaScript etc.
+            </p>
+            <p>I publish blog focused on web designing weekly.</p>
+            <p><u>Don't forget to subscribe!</u></p>
+          </div>
+          <button class="btn">Subscribe</button>
+        </aside>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="d-flex">
         <p>Created & Developed by @yoog</p>
-      </div>
-    </div>
+      </footer>
+    </main>
   </body>
 </html>

@@ -1,0 +1,122 @@
+/* BLOG SECTION */
+
+/* CURRENT BLOG SECTION */
+.current-blog {
+  background-color: white;
+  padding: 10px 10px;
+  font-family: "Roboto Mono", monospace;
+  grid-area: cb;
+  display: inline-block;
+  width: 100%;
+}
+
+.current-blog-title {
+  color: #202756;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.utility {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  margin-bottom: 10px;
+}
+
+.key-word,
+.share-kit {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.share-kit > p {
+  padding: 0 5px;
+}
+
+.share-kit > p > i {
+  font-size: 20px;
+  color: rgb(49, 49, 231);
+}
+
+.share-kit > p > i:hover {
+  cursor: pointer;
+}
+
+.key-word {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.current-blog > figure > figcaption {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.current-blog > figure > img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.current-content > p {
+  font-size: 20px;
+  margin: 10px 0;
+  line-height: 1.5em;
+  color: #5e2d89;
+}
+
+blockquote {
+  max-width: 100%;
+  margin: 15px 0;
+  padding: 10px 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: gray;
+  background: antiquewhite;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.author {
+  flex: 0.2;
+  align-self: flex-start;
+  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #fffafa;
+}
+
+.author > figure {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.author > figure > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.author-info {
+  margin-top: 15px;
+  padding: 8px;
+  background-color: #fff8dc;
+}
+
+.author-info > h2 {
+  text-align: center;
+}
+
+.author-info > p {
+  margin-top: 15px;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Post</title>
+    <title>Personal Blog Website</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link
       rel="stylesheet"
@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
+      <header>
         <div class="title">
           <h1>Coding Guru</h1>
         </div>
@@ -24,26 +24,28 @@
           <h3 class="issue">Blog No.: 06</h3>
           <h3 class="current-date">05.24.2021</h3>
         </div>
-      </div>
-      <div class="sidebar">
+      </header>
+
+      <!-- Sidebar Section -->
+      <section class="sidebar d-flex-col">
         <div class="logo d-flex">
           <picture>
-            <img src="../images/myLogo.PNG" alt="" />
+            <img src="../images/myLogo.PNG" alt="logo-image" />
           </picture>
         </div>
-        <div class="side d-flex">
-          <i class="fas fa-home"></i>
-        </div>
-        <div class="side d-flex">
-          <i class="fas fa-file-code"></i>
-        </div>
-        <div class="side d-flex">
-          <i class="fab fa-blogger"></i>
-        </div>
-        <div class="social-media d-flex">
-          <div class="icon d-flex">
-            <i class="fas fa-mail-bulk"></i>
+        <div id="directory" class="d-flex-col">
+          <div class="side d-flex">
+            <a href="../index.html"> <i class="fas fa-home"></i></a>
           </div>
+          <div class="side d-flex">
+            <i class="fas fa-file-code"></i>
+          </div>
+          <div class="side d-flex">
+            <i class="fab fa-blogger"></i>
+          </div>
+        </div>
+        <hr class="hr-rule" />
+        <div id="social-media" class="d-flex-col">
           <div class="icon d-flex">
             <i class="fab fa-facebook-square"></i>
           </div>
@@ -54,9 +56,16 @@
             <i class="fab fa-twitter-square"></i>
           </div>
         </div>
-      </div>
+        <hr class="hr-rule" />
+        <div id="contact" class="d-flex-col">
+          <h3>Contact:</h3>
+          <p><i class="fas fa-envelope"></i> someone@anyone.com</p>
+          <p><i class="fas fa-phone-square-alt"></i> 1 (222) 222 - 2222</p>
+        </div>
+      </section>
 
-      <div class="blog-content">
+      <!-- Blog Content Section  -->
+      <section class="blog-post-content">
         <div class="current-blog">
           <div class="current-blog-title">
             <h1>
@@ -75,10 +84,11 @@
               <p><i class="fab fa-twitter-square"></i></p>
             </div>
           </div>
-          <picture>
-            <img src="../images/Js.png" alt="" />
-          </picture>
-          <div class="current-content">
+          <figure>
+            <img src="../images/Js.png" alt="js-image" />
+            <figcaption>fig. 1: JavaScript</figcaption>
+          </figure>
+          <article class="current-content">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nisi
               delectus voluptatibus voluptates, numquam aspernatur? Pariatur
@@ -92,6 +102,11 @@
               voluptates voluptatum, minima culpa cupiditate eum esse ut aut
               animi laborum blanditiis, totam deleniti.
             </p>
+            <blockquote>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              mollitia, ad, vel animi nostrum voluptatibus enim velit, dolorem
+              tenetur minima quisquam quod quibusdam."
+            </blockquote>
             <p>
               Maiores doloribus odit voluptatum sint incidunt nemo mollitia nisi
               harum laboriosam, saepe earum adipisci suscipit magnam error neque
@@ -123,108 +138,38 @@
               doloremque fugiat reiciendis quo voluptatem ea sapiente
               consequuntur quia praesentium maiores eligendi.
             </p>
+            <p>
+              <b><em>Thank you for reading!</em></b>
+            </p>
+          </article>
+        </div>
+        <!-- Author Section -->
+        <aside class="author">
+          <figure>
+            <img
+              src="https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_960_720.png"
+              alt="avatar"
+            />
+            <figcaption>Yoog Gurung</figcaption>
+          </figure>
+          <div class="author-info">
+            <h2>Web Designer</h2>
+            <p>
+              As a professional freelancer I help people, organizations and
+              companies solving their web issues. I am proficient in HTML, CSS
+              and JavaScript etc.
+            </p>
+            <p>I publish blog focused on web designing weekly.</p>
+            <p><u>Don't forget to subscribe!</u></p>
           </div>
-        </div>
-        <div class="blog-list">
-          <h2>All My Blogs...</h2>
-          <ol>
-            <li>
-              <div class="blog-image">
-                <img src="../images/22-512.png" alt="" />
-              </div>
-              <div class="blog-description">
-                <div class="blog-title">Learn HTML5 free in Udacity!</div>
-                <div class="blog-date">05/25/2021</div>
-                <p><a href="../index.html" target="_blank"> more...</a></p>
-              </div>
-            </li>
-            <li>
-              <div class="blog-image">
-                <img src="../images/Js.png" alt="" />
-              </div>
-              <div class="blog-description">
-                <div class="blog-title">
-                  What is JavaScript? Why is it different from other Programming
-                  Languages?
-                </div>
-                <div class="blog-date">05/24/2021</div>
-                <p><a href="blogs/blog-post.html"> more...</a></p>
-              </div>
-            </li>
-            <li>
-              <div class="blog-image">
-                <img src="../images/react-js.png" alt="" />
-              </div>
-              <div class="blog-description">
-                <div class="blog-title">Is React a Library or Framework?</div>
-                <div class="blog-date">05/23/2021</div>
-                <p>
-                  <a href="https://reactjs.org/" target="_blank"> more...</a>
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="blog-image">
-                <img src="../images/rocks.png" alt="" />
-              </div>
-              <div class="blog-description">
-                <div class="blog-title">
-                  Let's Develop Rock, Paper & Scissors game and play!
-                </div>
-                <div class="blog-date">05/22/2021</div>
-                <p><a href="#"> more...</a></p>
-              </div>
-            </li>
-            <li>
-              <div class="blog-image">
-                <img src="../images/freecodecamp.jpeg" alt="" />
-              </div>
-              <div class="blog-description">
-                <div class="blog-title">
-                  What can you learn in freecodecamp.org?
-                </div>
-                <div class="blog-date">05/21/2021</div>
-                <p>
-                  <a href="https://www.freecodecamp.org" target="_blank">
-                    more...</a
-                  >
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="blog-image">
-                <img src="../images/github-512.png" alt="" />
-              </div>
-              <div class="blog-description">
-                <div class="blog-title">Why do you need to use github?</div>
-                <div class="blog-date">05/20/2021</div>
-                <p>
-                  <a href="https://github.com/" target="_blank"> more...</a>
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="blog-image">
-                <img src="../images/css3.png" alt="" />
-              </div>
-              <div class="blog-description">
-                <div class="blog-title">
-                  Beautify your website with these CSS tricks!
-                </div>
-                <div class="blog-date">05/19/2021</div>
-                <p>
-                  <a href="https://www.geeksforgeeks.org/" target="_blank">
-                    more...</a
-                  >
-                </p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </div>
-      <div class="footer d-flex">
+          <button class="btn">Subscribe</button>
+        </aside>
+      </section>
+
+      <!-- Footer Section  -->
+      <footer class="d-flex">
         <p>Created & Developed by @yoog</p>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
