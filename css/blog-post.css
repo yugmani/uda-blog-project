@@ -7,7 +7,8 @@
   font-family: "Roboto Mono", monospace;
   grid-area: cb;
   display: inline-block;
-  width: 100%;
+  flex: 0.7;
+  /* width: 100%; */
 }
 
 .current-blog-title {
@@ -80,7 +81,7 @@ blockquote {
 }
 
 .author {
-  flex: 0.2;
+  flex: 0.3;
   align-self: flex-start;
   height: calc(100vh - 120px);
   display: flex;

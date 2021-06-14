@@ -35,21 +35,12 @@
   background-color: lightyellow;
   display: grid;
   grid-gap: 3px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100px auto 50px;
-  grid-template-areas:
-    "s s h h h h h h h h h h"
-    "s s bc bc bc bc bc bc bc bc bc bc"
-    "f f f f f f f f f f f f";
 }
 
 /* HEADER SECTION */
-header {
+#header {
   background-color: #202756;
   font-family: "Trocchi", serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   grid-area: h;
 }
 
@@ -64,7 +55,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-right: 10px;
+  /* padding-right: 10px; */
   color: white;
 }
 
